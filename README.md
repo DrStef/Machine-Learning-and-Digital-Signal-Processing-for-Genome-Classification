@@ -5,7 +5,7 @@ Project based on journal article:
         at all taxonomic levels."
 Gurjit S. Randhawa, Kathleen A. Hill and Lila Kari
 
-Dataset used in this study are available in Gurjit S. Randhawa GitHub: 
+Dataset used in this study are from NCIB and they are available in the following Gurjit S. Randhawa GitHub repositories: 
 
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
 

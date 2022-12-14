@@ -14,13 +14,13 @@ ON, Canada
 Full list of author information is available at the end of the article
 
 <span style="color:#4169E1">The Abstract is reproduced here in-extenso: 
-
-<span style="color: #7b241c"> "Background: Although software tools abound for the comparison, analysis, identification, and classification of
+        
+> "Background: Although software tools abound for the comparison, analysis, identification, and classification of
 genomic sequences, taxonomic classification remains challenging due to the magnitude of the datasets and the
 intrinsic problems associated with classification. The need exists for an approach and software tool that addresses the
 limitations of existing alignment-based methods, as well as the challenges of recently proposed alignment-free
 methods.
-Results: We propose a novel combination of supervised Machine Learning with Digital Signal Processing, resulting
+>Results: We propose a novel combination of supervised Machine Learning with Digital Signal Processing, resulting
 in ML-DSP: an alignment-free software tool for ultrafast, accurate, and scalable genome classification at all taxonomic
 levels. We test ML-DSP by classifying 7396 full mitochondrial genomes at various taxonomic levels, from kingdom to
 genus, with an average classification accuracy of > 97%.
@@ -47,11 +47,16 @@ Machine learning, Numerical representation of DNA sequences, Digital signal proc
 ON, Canada
 Full list of author information is available at the end of the article
 
-**DATASET**
 
-Datasets
+#### <ul> **DATASET**   </ul> 
+        
+        
+        
+$\textcolor{#246EAA}{\textsf{All datasets in this paper can be found at https://github.com/grandhawa/MLDSP in the “DataBase” directory.}}$
+$\textcolor{#246EAA}{\textsf{The mitochondrial dataset comprises all of the 7396 complete reference mtDNA sequences available in the NCBI Reference Sequence Database RefSeq on June 17, 2017.}}$  
+                $\textcolor{#246EAA}{\textsf{We performed computational experiments on several different subsets of this dataset. The bacteria dataset comprises all 4710 complete bacterial genomes with lengths between 20,000 bp and 500,000 bp, available in the aforementioned NCBI database on the same date.}}$ 
+                $\textcolor{#246EAA}{\textsf{The dengue virus dataset contained all 4721 dengue virus genomes available in the NCBI database on August 10,2017. Note that any letters “N” in these DNA sequences were deleted.}}$
 
-All datasets in this paper can be found at https://github.com/grandhawa/MLDSP in the “DataBase” directory. The mitochondrial dataset comprises all of the 7396 complete reference mtDNA sequences available in the NCBI Reference Sequence Database RefSeq on June 17, 2017. We performed computational experiments on several different subsets of this dataset. The bacteria dataset comprises all 4710 complete bacterial genomes with lengths between 20,000 bp and 500,000 bp, available in the aforementioned NCBI database on the same date. The dengue virus dataset contained all 4721 dengue virus genomes available in the NCBI database on August 10,2017. Note that any letters “N” in these DNA sequences were deleted.
 
 For the performance comparison between ML-DSP and other alignment-free and alignment-based methods we also used the benchmark datasets of 38 influenza virus sequences, and 41 mammalian complete mtDNA sequences from [47].
 
@@ -105,6 +110,10 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
         
 **AUTHOR'S METHODOLOGY**
+        
+<dd>        
+$\textcolor{#2596be}{\text{The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses}}$
+</dd>
         
 The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses:
 

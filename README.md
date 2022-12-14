@@ -77,7 +77,7 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 | Saccharomycotina | 90        |  ML Classification |   
 
         
-** AUTHOR'S METHODOLOGY
+**AUTHOR'S METHODOLOGY**
         
 The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses:
 

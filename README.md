@@ -49,6 +49,33 @@ Full list of author information is available at the end of the article
 
 **DATASET**
 
+Datasets
+
+All datasets in this paper can be found at https://github.com/grandhawa/MLDSP in the “DataBase” directory. The mitochondrial dataset comprises all of the 7396 complete reference mtDNA sequences available in the NCBI Reference Sequence Database RefSeq on June 17, 2017. We performed computational experiments on several different subsets of this dataset. The bacteria dataset comprises all 4710 complete bacterial genomes with lengths between 20,000 bp and 500,000 bp, available in the aforementioned NCBI database on the same date. The dengue virus dataset contained all 4721 dengue virus genomes available in the NCBI database on August 10,2017. Note that any letters “N” in these DNA sequences were deleted.
+
+For the performance comparison between ML-DSP and other alignment-free and alignment-based methods we also used the benchmark datasets of 38 influenza virus sequences, and 41 mammalian complete mtDNA sequences from [47].
+
+Datasets are availble on Dr. Gurjit S. Randhawa Github following repositories:
+
+https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
+
+https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
+
+Data was extracted from
+
+National Library of Medicine, National Center for Biotechnology Information (NCBI) website. The database can be searched and genome of various live species, plants, fungi.
+
+https://www.ncbi.nlm.nih.gov/labs/gquery/all/?term=NC_001224.1
+
+And DNA sequence dataset from NCIB stored
+
+In Part I we test the application of supervides classifiscation algorithms with FFT of DNA sequences of Birds, Fishes, Mammals. We will see that classic algorithms are able to
+
+In part II, we will attempt to classify of FUngi in 3 categories. With a dataset with few samples: 30 and
+
+Full list of author information is available at the end of the article
+
+        
 Dataset used in this study are from NCIB and they are available in the following Gurjit S. Randhawa GitHub repositories: 
         
 We will test our approach with 2 datasets: <br> 

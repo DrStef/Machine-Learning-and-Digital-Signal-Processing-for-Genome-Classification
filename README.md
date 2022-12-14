@@ -47,7 +47,7 @@ Machine learning, Numerical representation of DNA sequences, Digital signal proc
 ON, Canada
 Full list of author information is available at the end of the article
 
-
+**DATASET**
 
 Dataset used in this study are from NCIB and they are available in the following Gurjit S. Randhawa GitHub repositories: 
 
@@ -56,5 +56,17 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
 
+**OUR METHODOLOGY**
 
-
+Birds - Fishes - Mammals
+In this dataset, the authors achieve a 100% accuracy !         
+We select the first NFFT=256, compute the FFT spectrum, we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters.  <br>    
+        
+The method is inefficient when classifying fungis in three phylums:  . Unfortunately we had to introduce an alignement method for selecting optimal frames (lenght 256 points) before computiong the FFT.  At least in a first phase of this project we rely on "soft" alignement for selecting optimal frame, and achieveing a **94%** acuracy with SVM and rbf kernel. After optimizing hyperparameters. Which is better than the best result achived by the authors. The main drawback of our method is a very process of alignement presented in.  
+        
+        
+In a third part, we will investigate a more complex numerical representation of DNA seuqnces for improved classification. Without the time consuming aligement technique.          
+        
+        
+        
+        

@@ -115,8 +115,12 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 $\textcolor{#2596be}{\text{The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses}}$
 </dd>
         
-The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses:
-
+        
+<dd>         
+$\textcolor{#2596be}{\text{The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses}}$
+</dd>
+        
+        
 DNA numerical representations to obtain a set N={N1,N2,…,Nn} where Ni is a discrete numerical representation of the sequence Si, 1≤i≤n.
 
 Discrete Fourier Transform (DFT) applied to the length-normalized digital signals Ni, to obtain the frequency distribution; the magnitude spectrum Mi of this frequency distribution is then obtained.

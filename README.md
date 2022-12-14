@@ -55,9 +55,9 @@ We will test our approach with 2 datasets: <br>
         
         (1) Birds-Fish-Mammals    (553,)  Fishes:  (874,)  Mammals:  (2313,)
         
-| Class   | Number of     |  DNA sequence    |        
-|         | Genomes      |  min-max length    |
-| ---     | ---         | ---                |
+| Class   | Genomes     |  DNA sequence    |    
+| ---     | ---         | ---              |
+|         | (count)     |  (min-max length) |
 | Birds   |   553       | ML Classification  |
 | Fish    | 874         |  ML Classification |
 | Mammals | 2313        |  ML Classification |       

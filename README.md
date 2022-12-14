@@ -50,9 +50,15 @@ Full list of author information is available at the end of the article
 **DATASET**
 
 Dataset used in this study are from NCIB and they are available in the following Gurjit S. Randhawa GitHub repositories: 
-
+        
+We will test our approach with 2 datasets: <br> 
+        
+        (1) Birds-Fish-Mammals
+        
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
-
+        
+        (2) Fungis: Basidiomycota (only 30 genomes), Pezizomycotina, Saccharomycotina
+        
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
 

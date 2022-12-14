@@ -68,6 +68,13 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
         
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
+        
+| Phylum   | Genomes     |  DNA sequence    |    
+| ---     | ---         | ---              |
+|         | (count)     |  (min-max length) |
+| Basidiomycota   |   30       | ML Classification  |
+| Pezizomycotina   | 104       |  ML Classification |
+| Saccharomycotina | 90        |  ML Classification |   
 
 **OUR METHODOLOGY**
 

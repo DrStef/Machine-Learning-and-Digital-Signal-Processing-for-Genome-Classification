@@ -2,16 +2,29 @@
 
 
 
-
-| DNA sequence   |    
+```diff
+- text in red 
+| - DNA sequence   |    
 | ---              |
-|  (min-max length) |
-| ML Classification  |
+| - (min-max length) |
+|- ML Classification  |
 |  ML Classification |
 |$\color{blue}\fcolorbox{red}{white}{Although software tools abound for the comparison, analysis, identification,}$
 $\color{blue}\fcolorbox{red}{white}{and classification of genomic sequences, taxonomic classification remains challenging due}$|  
-        
+```
 
+
+```diff
+- text in red
++ text in green
+! text in orange
+# For running the server and app together I am using concurrently this helps a lot in the MERN application as it runs both the server (client and server) concurrently. So you can work on them both together.
+
+
+
+
+@@ text in purple (and bold)@@
+```
 
 
 

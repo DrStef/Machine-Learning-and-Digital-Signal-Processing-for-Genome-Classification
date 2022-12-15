@@ -63,6 +63,23 @@ Full list of author information is available at the end of the article
 
 #### <ul> **DATASET**   </ul> 
         
+## <ul> **Applications** </ul>
+
+$\textcolor{#246EAA}{\textsf{Project Protfolio. Many of these projects were perfromed for IBM Sliss Network certificates.}}$
+
+- #### <ul>  **House sales in King County USA** 
+   
+   <ul> $\textcolor{#246EAA}{\textsf{We performed computational experiments on several}}$ $\textcolor{#246EAA}{\textsf{different subsets of this dataset.}}$ $\textcolor{#246EAA}{\textsf{The bacteria dataset comprises all 4710 complete}}$ $\textcolor{#246EAA}{\textsf{bacterial genomes with lengths between 20,000 bp and 500,000 bp}}$  
+           
+           
+           
+           , available in the aforementioned NCBI database on the same date.}}$ $\textcolor{#246EAA}{\textsf{Linear regression for predicting home price based on.}}$ $\textcolor{#246EAA}{\textsf{Linear regression for predicting home price based on.}}$ </ul>
+        
+        
+        
+        
+        
+        
         
         
 $\textcolor{#246EAA}{\textsf{All datasets in this paper can be found at https://github.com/grandhawa/MLDSP in the “DataBase” directory.}}$

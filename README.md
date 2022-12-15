@@ -6,6 +6,14 @@ Project based on journal article:
 Gurjit S. Randhawa, Kathleen A. Hill and Lila Kari
 
 
+*This text will be italic*_This will also be italic_
+**This text will be bold**__This will also be bold__
+**You **can** combine them*
+
+#   This is a  <h1> tag.  ##  This is a  <h2> tag. ###### This is a <h6> tag.
+Result: This is a <h1> tag.This is a  <h2> tag.This is a <h6> tag.
+
+
 <span style="color:#4169E1">Randhawa et al. BMC Genomics (2019) 20:267
 https://doi.org/10.1186/s12864-019-5571-y
 
@@ -13,6 +21,12 @@ https://doi.org/10.1186/s12864-019-5571-y
 ON, Canada
 Full list of author information is available at the end of the article
 
+        
+$\color{blue}\fcolorbox{red}{white} {Although software tools abound for the comparison, analysis, identification, and classification of genomic sequences, taxonomic classification remains challenging due to the magnitude of the datasets and the
+intrinsic problems associated with classification. The need exists for an approach and software tool that addresses the
+limitations of existing alignment-based methods, as well as the challenges of recently proposed alignment-free
+methods.}$
+        
 <span style="color:#4169E1">The Abstract is reproduced here in-extenso: 
         
 > "Background: Although software tools abound for the comparison, analysis, identification, and classification of
@@ -86,13 +100,44 @@ Dataset used in this study are from NCIB and they are available in the following
 We will test our approach with 2 datasets: <br> 
         
         (1) Birds-Fish-Mammals: 
-        
-| Class   | Genomes     |  DNA sequence    |    
+ 
+| Class   | Genomes     | DNA sequence   |    
 | ---     | ---         | ---              |
 |         | (count)     |  (min-max length) |
 | Birds   |   553       | ML Classification  |
 | Fish    | 874         |  ML Classification |
-| Mammals | 2313        |  ML Classification |       
+| Mammals | 2313        |$\color{blue}{Although software tools abound for the comparison, analysis, identification, and classification of genomic sequences, taxonomic classification remains challenging due to the magnitude of the datasets and the intrinsic problems associated with classification. The need exists for an approach and software tool that addresses the limitations of existing alignment-based methods, as well as the challenges of recently proposed alignment-free
+methods.}$ |  
+        
+        
+        
+        
+        
+| Class   | Genomes     |  <div style="width:100px">DNA sequence</div> |    
+| ---     | ---         | ---              |
+|         | (count)     |  (min-max length) |
+| Birds   |   553       | ML Classification  |
+| Fish    | 874         |  ML Classification |
+| Mammals | 2313        |Although software tools abound for the comparison, analysis, identification, and classification of genomic sequences, taxonomic classification remains challenging due to the magnitude of the datasets and the intrinsic problems associated with classification. The need exists for an approach and software tool that addresses the limitations of existing alignment-based methods, as well as the challenges of recently proposed alignment-free
+methods. |  
+        
+        
+        
+
+$\color{blue}{The mitochondrial dataset comprises all of the}$
+
+$\color{blue}\fcolorbox{red}{white}{Although software tools abound for the comparison, analysis,}$      
+        
+        
+<dd>        
+$\color{blue}\fcolorbox{red}{white}{Although software tools abound for the comparison, analysis, identification, and classification of genomic sequences, taxonomic classification remains challenging due}$
+</dd>
+        
+$\color{blue}\fcolorbox{red}{white}{to the magnitude of the datasets <br> and the intrinsic problems associated with classification.}$ $\color{blue}\fcolorbox{red}{white}{The need exists for an approach and software tool that addresses the <br> limitations of existing}$
+$\color{blue}\fcolorbox{red}{white}{alignment-based methods, as well as the challenges of recently proposed alignment-free}$ 
+        
+        
+        
         
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
         

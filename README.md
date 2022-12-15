@@ -2,6 +2,50 @@
 
 
 
+
+| DNA sequence   |    
+| ---              |
+|  (min-max length) |
+| ML Classification  |
+|  ML Classification |
+|$\color{blue}\fcolorbox{red}{white}{Although software tools abound for the comparison, analysis, identification,}$
+$\color{blue}\fcolorbox{red}{white}{and classification of genomic sequences, taxonomic classification remains challenging due}$|  
+        
+
+
+
+
+
+
+<h1 align="center">Hello World!</h1>
+
+$\color{blue}\fcolorbox{red}{white} {Although software tools abound for the comparison, analysis, identification, and}$ $\color{blue}\fcolorbox{red}{white} {classification of genomic sequences, taxonomic classification remains challenging due to the magnitude of the datasets and the}$
+$\color{blue}\fcolorbox{red}{white} {intrinsic problems associated with classification. The need exists for an approach and software tool that addresses the}$
+$\color{blue}\fcolorbox{red}{white} {limitations of existing alignment-based methods, as well as the challenges of recently proposed alignment-free
+methods.}$
+
+<ul>
+  <li>Happy Coding</li>
+  <li>Software Product Sprint</li>
+  <li>Google Maps</li>
+</ul>
+
+<hr>
+
+<p>I <strong>love</strong> nerding out about creative coding, so don't hesitate to reach out!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h1 align="center"><project-name></h1>
 
 <p align="center"><project-description></p>
@@ -227,8 +271,8 @@ We will test our approach with 2 datasets: <br>
 |         | (count)     |  (min-max length) |
 | Birds   |   553       | ML Classification  |
 | Fish    | 874         |  ML Classification |
-| Mammals | 2313        |$\color{blue}{Although software tools abound for the comparison, analysis, identification, and classification of genomic sequences, taxonomic classification remains challenging due to the magnitude of the datasets and the intrinsic problems associated with classification. The need exists for an approach and software tool that addresses the limitations of existing alignment-based methods, as well as the challenges of recently proposed alignment-free
-methods.}$ |  
+| Mammals | 2313        |<p> \color{blue}{Although software tools abound for the comparison, analysis, identification, and classification of genomic sequences, taxonomic classification remains challenging due to the magnitude of the datasets and the intrinsic problems associated with classification. The need exists for an approach and software tool that addresses the limitations of existing alignment-based methods, as well as the challenges of recently proposed alignment-free
+    methods.} </p>|  
         
         
         

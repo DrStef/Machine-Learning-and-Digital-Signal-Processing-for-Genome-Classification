@@ -12,12 +12,11 @@ Gurjit S. Randhawa*, Kathleen A. Hill* and Lila Kari*, <span style="color:#4169E
 The authors propose (we quote) <i> a novel combination of supervised Machine Learning with Digital Signal Processing, resulting in ML-DSP: an alignment-free software tool for ultrafast, accurate, and scalable genome classification at all taxonomic levels. They test ML-DSP by classifying 7396 full mitochondrial genomes at various taxonomic levels, from kingdom to genus, with an average classification accuracy of > 97%. </i> <br> 
         
 > Their original ML-DSP approach consists of: 
- <i>"The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses:
-
+ <i>"The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses:</i>
         - <ul><ul> DNA numerical representations.
         - <ul><ul> Discrete Fourier Transform (DFT) and extraction of DNA sequences spectrum magintudes Mi
         - <ul><ul> Pearson Correlation Coefficient (PCC) to compute the distance matrix of all pairwise distances for each pair of magnitude spectra (Mi,Mj), where 1≤i,j≤n
-        - <ul><ul> Supervised Machine Learning classifiers which take the pairwise distance matrix for a set of sequences
+        - <ul><ul> Supervised Machine Learning classifiers which take the pairwise distance matrix for a set of sequences. 
      
 The advantage of their method  
         

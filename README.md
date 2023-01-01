@@ -56,19 +56,57 @@ LINK FUNGI JUPYTER NOTEBOOK
         
  ## Datasets       
         
-Datasets are available from Dr. Gurjit S. Randhawa Github following repositories:
-
+All datasets are available from Dr. Gurjit S. Randhawa Github following repository:
+        
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/
 
-https://github.com/grandhawa/MLDSP/tree/master/DataBase/
-
-Data was extracted from the National Library of Medicine, National Center for Biotechnology Information (NCBI) website. The database can be searched and genome of various live species, plants, fungi.
+Data was extracted from the National Library of Medicine, National Center for Biotechnology Information (NCBI) website. The database can be searched and genome of various live species: plants, fungi... can be downloaded. 
 
 https://www.ncbi.nlm.nih.gov/labs/gquery/all/?term=NC_001224.1
 
-And DNA sequence dataset from NCIB stored
+For the alignement process, we imported additional data: Fungi DNA sequences, stored in folder A_Fungi.
 
-For the alignement process, we imported additional Fungi DNA sequences, stored in folder A_Fungi.           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

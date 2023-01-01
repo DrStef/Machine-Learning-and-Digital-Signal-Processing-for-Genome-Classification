@@ -66,7 +66,10 @@ https://www.ncbi.nlm.nih.gov/labs/gquery/all/?term=NC_001224.1
 
 For the alignement process, we imported additional data: Fungi DNA sequences, stored in folder A_Fungi.
 
-        
+<br>
+<br>        
+<br>        
+<br>        
         
         
         

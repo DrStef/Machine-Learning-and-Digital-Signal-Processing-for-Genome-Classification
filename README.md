@@ -1,25 +1,34 @@
 # Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification
 
-| - DNA sequence   |    
-| ---              |
-| - (min-max length) |
-|- ML Classification  |
-|  ML Classification |
-|$\color{blue}\fcolorbox{red}{white}{Although software tools abound for the comparison, analysis, identification,}$
-$\color{blue}\fcolorbox{red}{white}{and classification of genomic sequences, taxonomic classification remains challenging due}$| 
 
-Project based on journal article:  
-"ML-DSP: Machine Learning with Digital Signal Processing for ultrafast, accurate, and scalable genome classification 
-        at all taxonomic levels."
-Gurjit S. Randhawa, Kathleen A. Hill and Lila Kari
+Project:  Applying Digital Signal Processing: Fourier Transform, and Machine Learning fot genome classification. 
 
-<span style="color:#4169E1">Randhawa et al. BMC Genomics (2019) 20:267
-https://doi.org/10.1186/s12864-019-5571-y
+Project based on journal article:  <br>
+"ML-DSP: Machine Learning with Digital Signal Processing for ultrafast, accurate, and scalable genome classification at all taxonomic levels."  <br>
+Gurjit S. Randhawa*, Kathleen A. Hill* and Lila Kari*, <span style="color:#4169E1">Randhawa et al. BMC Genomics (2019) 20:267 https://doi.org/10.1186/s12864-019-5571-y
 
-1Department of Computer Science, University of Western Ontario, London,
-ON, Canada
-Full list of author information is available at the end of the article
+*Department of Computer Science, University of Western Ontario, London, ON, Canada
 
+The authors propose (we quote) <i> a novel combination of supervised Machine Learning with Digital Signal Processing, resulting in ML-DSP: an alignment-free software tool for ultrafast, accurate, and scalable genome classification at all taxonomic levels. They test ML-DSP by classifying 7396 full mitochondrial genomes at various taxonomic levels, from kingdom to genus, with an average classification accuracy of > 97%. </i> <br> 
+        
+Their original ML-DSP approach consists of: 
+ <div align="center"> $\textcolor{#2596be}{\text{The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses}}$ </div>
+
+        <ul><ul> DNA numerical representations.
+        
+DNA numerical representations.  to obtain a set N={N1,N2,…,Nn} where Ni is a discrete numerical representation of the sequence Si, 1≤i≤n.
+
+Discrete Fourier Transform (DFT) applied to the length-normalized digital signals Ni, to obtain the frequency distribution; the magnitude spectrum Mi of this frequency distribution is then obtained.
+
+Pearson Correlation Coefficient (PCC) to compute the distance matrix of all pairwise distances for each pair of magnitude spectra (Mi,Mj), where 1≤i,j≤n.
+
+Supervised Machine Learning classifiers which take the pairwise distance matrix for a set of sequences, together with their respective taxonomic labels, in a training set, and output the taxonomic classification of a new DNA sequence. To measure the performance of such a classifier, we use the 10-fold cross-validation technique.
+
+Independently, Classical Multidimensional Scaling (MDS) takes the distance matrix as input and returns an (n×q) coordinate matrix, where n is the number of points (each point represents a unique sequence from set S) and q is the number of dimensions. The first three dimensions are used to display a MoDMap, which is the simultaneous visualization of all points in 3D-space. 
+      
+In the classification process, somes genomes datasets are more challenging than others, particularly the Fungi dataset, in the same phylum, where best accuracy is closer to 90%.   
+        l
+        
         
 $\color{blue}\fcolorbox{red}{white} {Although software tools abound for the comparison, analysis, identification, and classification of genomic sequences, taxonomic classification remains challenging due to the magnitude of the datasets and the
 intrinsic problems associated with classification. The need exists for an approach and software tool that addresses the
@@ -204,4 +213,10 @@ The method is inefficient when classifying fungis in three phylums:  . Unfortuna
         
 In a third part, we will investigate a more complex numerical representation of DNA seuqnces for improved classification. Without the time consuming aligement technique.          
 
-
+| - DNA sequence   |    
+| ---              |
+| - (min-max length) |
+|- ML Classification  |
+|  ML Classification |
+|$\color{blue}\fcolorbox{red}{white}{Although software tools abound for the comparison, analysis, identification,}$
+$\color{blue}\fcolorbox{red}{white}{and classification of genomic sequences, taxonomic classification remains challenging due}$| 

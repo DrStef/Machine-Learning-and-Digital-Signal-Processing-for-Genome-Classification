@@ -13,10 +13,10 @@ The authors propose (we quote) <i> a novel combination of supervised Machine Lea
         
 > Their original ML-DSP approach consists of: 
  <i>"The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set S={S1,S2,…,Sn} of n DNA sequences, ML-DSP uses:</i>
-        - <ul><ul> DNA numerical representations.
-        - <ul><ul> Discrete Fourier Transform (DFT) and extraction of DNA sequences spectrum magintudes Mi
-        - <ul><ul> Pearson Correlation Coefficient (PCC) to compute the distance matrix of all pairwise distances for each pair of magnitude spectra (Mi,Mj), where 1≤i,j≤n
-        - <ul><ul> Supervised Machine Learning classifiers which take the pairwise distance matrix for a set of sequences. 
+        - <ul><ul> DNA numerical representations.</ul></ul>
+        - <ul><ul> Discrete Fourier Transform (DFT) and extraction of DNA sequences spectrum magintudes Mi </ul></ul>
+        - <ul><ul> Pearson Correlation Coefficient (PCC) to compute the distance matrix of all pairwise distances for each pair of magnitude spectra (Mi,Mj), where 1≤i,j≤n  </ul></ul>
+        - <ul><ul> Supervised Machine Learning classifiers which take the pairwise distance matrix for a set of sequences. </ul></ul>
      
 The advantage of their method  
         

@@ -24,26 +24,39 @@ The advantage of their method Our results show that ML-DSP overwhelmingly outper
 
  ## Our approach ML-FFT
  
-        Our approach is simpler. We notice that spectrum phases are left aside in the
-        We just integerate 
-     Classification will use the spectrum, not any 
-        
-The method works very well on with an accuracy of 98-99% (short of the 100% of MLDp
+We notice that spectrum phases are left aside in the 
+Intuitively, if the magnitude of the spectrum describes the contribution (amplitude, energy if M^2) of various "trains" of signal oscillations, the phase adds an important information about their relative positions. And we should not leave this information aside.  
+
+
+
+Birds - Fishes - Mammals
+With this dataset, ML-DSP achieves a 100% accuracy !     
+We select the first NFFT=256 points of each numerical DNA sequence, compute the FFT spectrum and keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. 
         
 For the challenging Fungi dataset, this simple method does not work well, classifcation returns dsipapointing results and we had to develop a DNA sequence alignement method based on cross correlatio acting like a pre-classification filter. The process   but in the end we reached a 94% accuracy. Higher than ML-DSP 
- 
- ## **OUR METHODOLOGY**
+        
+** Birds - Fishes - Mammals **
+With this dataset, the authors achieve a 100% accuracy !         
+We select the first NFFT=256, compute the FFT spectrum, we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. Like the autorrs, to measure the performance of such a classifier, we use the 10-fold cross-validation technique.  <br>   
 
+        Part I: 
+LINK  JUPYTER NOTEBOOK HERE 
         
-Birds - Fishes - Mammals
-In this dataset, the authors achieve a 100% accuracy !         
-We select the first NFFT=256, compute the FFT spectrum, we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters.  <br>    
-        
-The method is inefficient when classifying fungis in three phylums:  . Unfortunately we had to introduce an alignement method for selecting optimal frames (lenght 256 points) before computiong the FFT.  At least in a first phase of this project we rely on "soft" alignement for selecting optimal frame, and achieveing a **94%** acuracy with SVM and rbf kernel. After optimizing hyperparameters. Which is better than the best result achived by the authors. The main drawback of our method is a very process of alignement presented in.  
+** Fungi **
+
+Our ML-FFT method is inefficient when classifying Fungis in three (sub)-phylums:  . <br> 
+We had to introduce an alignement method for selecting:
+         - 3 reference DNA sequence frames 
+         - optimal DNA sequence frames (length 256 points) before computiong the FFT.  
+At least in a first phase of this project we rely on "soft" alignement for selecting optimal frame, and achieveing a **94%** acuracy with SVM and rbf kernel. After optimizing hyperparameters. Which is better than the best result achived by the authors. The main drawback of our method is a very process of alignement presented in.  
+         Part II:   
+        part IIb: Alignement technique based on Corss-Correlation. 
+LINK  JUPYTER NOTEBOOK HERE
+LINK FUNGI JUPYTER NOTEBOOK 
         
  ## Datasets       
         
-Datasets are available on Dr. Gurjit S. Randhawa Github following repositories:
+Datasets are available from Dr. Gurjit S. Randhawa Github following repositories:
 
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/
 
@@ -55,21 +68,18 @@ https://www.ncbi.nlm.nih.gov/labs/gquery/all/?term=NC_001224.1
 
 And DNA sequence dataset from NCIB stored
 
+For the alignement process, we imported additional Fungi DNA sequences, stored in folder A_Fungi.           
         
         
         
         
         
         
+ 
         
         
         
-        
-        
-        
-        
-Datasets: 
-        
+       
         
 DNA numerical representations.  to obtain a set N={N1,N2,…,Nn} where Ni is a discrete numerical representation of the sequence Si, 1≤i≤n.
 
@@ -261,13 +271,3 @@ We select the first NFFT=256, compute the FFT spectrum, we keep the phase. And w
         
 The method is inefficient when classifying fungis in three phylums:  . Unfortunately we had to introduce an alignement method for selecting optimal frames (lenght 256 points) before computiong the FFT.  At least in a first phase of this project we rely on "soft" alignement for selecting optimal frame, and achieveing a **94%** acuracy with SVM and rbf kernel. After optimizing hyperparameters. Which is better than the best result achived by the authors. The main drawback of our method is a very process of alignement presented in.  
         
-        
-In a third part, we will investigate a more complex numerical representation of DNA seuqnces for improved classification. Without the time consuming aligement technique.          
-
-| - DNA sequence   |    
-| ---              |
-| - (min-max length) |
-|- ML Classification  |
-|  ML Classification |
-|$\color{blue}\fcolorbox{red}{white}{Although software tools abound for the comparison, analysis, identification,}$
-$\color{blue}\fcolorbox{red}{white}{and classification of genomic sequences, taxonomic classification remains challenging due}$| 

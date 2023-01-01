@@ -9,6 +9,8 @@ Gurjit S. Randhawa*, Kathleen A. Hill* and Lila Kari*, <span style="color:#4169E
 
 *Department of Computer Science, University of Western Ontario, London, ON, Canada
 
+## ML-DSP approach        
+        
 The authors propose (we quote) <i> a novel combination of supervised Machine Learning with Digital Signal Processing, resulting in ML-DSP: an alignment-free software tool for ultrafast, accurate, and scalable genome classification at all taxonomic levels. They test ML-DSP by classifying 7396 full mitochondrial genomes at various taxonomic levels, from kingdom to genus, with an average classification accuracy of > 97%. </i> <br> 
         
 > Their original ML-DSP approach consists of: 
@@ -18,10 +20,54 @@ The authors propose (we quote) <i> a novel combination of supervised Machine Lea
         <ul><ul> Pearson Correlation Coefficient (PCC) to compute the distance matrix of all pairwise distances for each pair of magnitude spectra $(M_i,M_j)$, where 1≤i,j≤n  </ul></ul>
         <ul><ul> Supervised Machine Learning classifiers which take the pairwise distance matrix for a set of sequences. </ul></ul>
      
-The advantage of their method  
-        
- 
+The advantage of their method Our results show that ML-DSP overwhelmingly outperforms the alignment-based software MEGA7 (alignment with MUSCLE or CLUSTALW) in terms of processing time, while having comparable classification accuracies for small datasets and superior accuracies for the large dataset. Compared with the alignment-free software FFP (Feature Frequency Profile), ML-DSP has significantly better classification accuracy, and is overall faster. We also provide preliminary experiments indicating the potential of ML-DSP to be used for other datasets, by classifying 4271 complete dengue virus genomes into subtypes with 100% accuracy, and 4,710 bacterial genomes into phyla with 95.5% accuracy. Lastly, our analysis shows that the “Purine/Pyrimidine”, “Just-A” and “Real” numerical representations of DNA sequences outperform ten other such numerical representations used in the Digital Signal Processing literature for DNA classification purposes.  
 
+ ## Our approach ML-FFT
+ 
+        Our approach is simpler. We notice that spectrum phases are left aside in the
+        We just integerate 
+     Classification will use the spectrum, not any 
+        
+The method works very well on with an accuracy of 98-99% (short of the 100% of MLDp
+        
+For the challenging Fungi dataset, this simple method does not work well, classifcation returns dsipapointing results and we had to develop a DNA sequence alignement method based on cross correlatio acting like a pre-classification filter. The process   but in the end we reached a 94% accuracy. Higher than ML-DSP 
+ 
+ ## **OUR METHODOLOGY**
+
+        
+Birds - Fishes - Mammals
+In this dataset, the authors achieve a 100% accuracy !         
+We select the first NFFT=256, compute the FFT spectrum, we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters.  <br>    
+        
+The method is inefficient when classifying fungis in three phylums:  . Unfortunately we had to introduce an alignement method for selecting optimal frames (lenght 256 points) before computiong the FFT.  At least in a first phase of this project we rely on "soft" alignement for selecting optimal frame, and achieveing a **94%** acuracy with SVM and rbf kernel. After optimizing hyperparameters. Which is better than the best result achived by the authors. The main drawback of our method is a very process of alignement presented in.  
+        
+ ## Datasets       
+        
+Datasets are available on Dr. Gurjit S. Randhawa Github following repositories:
+
+https://github.com/grandhawa/MLDSP/tree/master/DataBase/
+
+https://github.com/grandhawa/MLDSP/tree/master/DataBase/
+
+Data was extracted from the National Library of Medicine, National Center for Biotechnology Information (NCBI) website. The database can be searched and genome of various live species, plants, fungi.
+
+https://www.ncbi.nlm.nih.gov/labs/gquery/all/?term=NC_001224.1
+
+And DNA sequence dataset from NCIB stored
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 Datasets: 
         
         
@@ -81,12 +127,8 @@ Full list of author information is available at the end of the article
 
 #### <ul> **DATASET**   </ul> 
         
-## <ul> **Applications** </ul>
 
-$\textcolor{#246EAA}{\textsf{Project Protfolio. Many of these projects were perfromed for IBM Sliss Network certificates.}}$
-
-- #### <ul>  **House sales in King County USA** 
-   
+        
    <ul> $\textcolor{#246EAA}{\textsf{We performed computational experiments on several}}$ $\textcolor{#246EAA}{\textsf{different subsets of this dataset.}}$ $\textcolor{#246EAA}{\textsf{The bacteria dataset comprises all 4710 complete}}$ $\textcolor{#246EAA}{\textsf{bacterial genomes with lengths between 20,000 bp and 500,000 bp}}$  
            
            

@@ -1,4 +1,4 @@
-# Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification
+# Machine Learning and Digital Signal Processing for Genome Classification
 
 
 Project:  Applying Digital Signal Processing: Fourier Transform, and Machine Learning fot genome classification. 

@@ -30,6 +30,11 @@ Intuitively, if the magnitude of the spectrum describes the contribution (amplit
 
 
 Birds - Fishes - Mammals
+        
+        
+  
+        
+        
 With this dataset, ML-DSP achieves a 100% accuracy !     
 We select the first NFFT=256 points of each numerical DNA sequence, compute the FFT spectrum and keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. 
         
@@ -37,7 +42,10 @@ For the challenging Fungi dataset, this simple method does not work well, classi
         
 ## Birds - Fishes - Mammals DNA seuquence classification. 
         
-  
+The dataset is available here:         
+
+https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
+        
 Dataset:
 | Class   | Genomes  <br> (count)   |  
 | ---     | ---         | 
@@ -50,7 +58,7 @@ Dataset:
         
 With this dataset, the authors achieve <b> 100% accuracy </b> with the ML-DSP method !         
 <br>
-We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum.  We tested with and without the spectrum phase. Some results are reported in the table below.  we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. Like the autorrs, to measure the performance of such a classifier, we use the 10-fold cross-validation technique.  <br>   
+We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum.  We tested our apporach with and without the spectrum phase.  Some results are reported in the table below.  we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. Like the autorrs, to measure the performance of such a classifier, we use the 10-fold cross-validation technique.  <br>   
 
 
         
@@ -68,24 +76,7 @@ We display the best result below.  We are capable or achieveing a 100% accuracy,
 | ---     | ---         | 
 | <img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/>   |       
         
-        
-        
-        
-        
-        
-<table border="1" width='700px'>
-<tr>
-    <td> <img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/> 
-        <figcaption style="text-align:center;color:black;font-size:14px;"> <i>Classification accuracy</i> </figcaption> </td>
-    <td> <img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/> 
-        <figcaption style="text-align:center;color:black;font-size:14px;"> <i> Confusion Matrix </i> </figcaption>  </td>
-</tr>
-<tr style='text-align:center; vertical-align:middle'></tr> 
-<table border="1" width='700px'>   
-<tr>    
-<figcaption style="text-align:center;color:black;font-size:14px;"> <i> Best ML-FFT results with SVM - Linear kernel  </i> </figcaption>
-</tr>    
-           
+              
     
         
 ##  Fungi DNA sequence classification        

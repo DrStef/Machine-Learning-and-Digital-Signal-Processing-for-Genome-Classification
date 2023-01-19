@@ -35,65 +35,97 @@ We select the first NFFT=256 points of each numerical DNA sequence, compute the 
         
 For the challenging Fungi dataset, this simple method does not work well, classifcation returns dsipapointing results and we had to develop a DNA sequence alignement method based on cross correlatio acting like a pre-classification filter. The process   but in the end we reached a 94% accuracy. Higher than ML-DSP 
         
-** Birds - Fishes - Mammals **
-With this dataset, the authors achieve a 100% accuracy !         
-We select the first NFFT=256, compute the FFT spectrum, we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. Like the autorrs, to measure the performance of such a classifier, we use the 10-fold cross-validation technique.  <br>   
-
- | Class   | Genomes     | DNA sequence   |    
-| ---     | ---         | ---              |
-|         | (count)     |  (min-max length) |
-| Birds   |   553       | ML Classification  |
-| Fish    | 874         |  ML Classification |
-| Mammals | 2313        |                    |        
+## Birds - Fishes - Mammals DNA seuquence classification. 
         
-<table border="1" width='750px'>
+  
+Dataset:
+| Class   | Genomes  <br> (count)   |  
+| ---     | ---         | 
+|         |      |  
+| Birds   |   553       | 
+| Fish    | 874         | 
+| Mammals | 2313        |       
+      
+        
+        
+With this dataset, the authors achieve <b> 100% accuracy </b> with the ML-DSP method !         
+<br>
+We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum.  We tested with and without the spectrum phase. Some results are reported in the table below.  we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. Like the autorrs, to measure the performance of such a classifier, we use the 10-fold cross-validation technique.  <br>   
+
+
+        
+| Approach                                 | Accuracy |      ML Technique         |
+| ---                                      | ---      |   ---                     |
+|First NFFT=  512 points                   |  97-98%  |       SVM  rbf kernel     | 
+|First NFFT=  512 points                   |  97-98%  |       SVM  rbf kernel     | 
+|First NFFT= 1024 Magnitude+Phase (1024 features) | <b> ~100% </b> |  SVM linear kernel     |
+|First NFFT= 1024 Magnitude only (512 features) | <b> ~100% </b>   |    SVM  rbf kernel     |  
+
+        
+We display the best result below.  We are capable or achieveing a 100% accuracy, with a simple ML-FFT method. 
+        
+| Classification report   | Confusion Matrix   |  
+| ---     | ---         | 
+| <img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/>   |       
+        
+        
+        
+        
+        
+        
+<table border="1" width='700px'>
 <tr>
     <td> <img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/> 
         <figcaption style="text-align:center;color:black;font-size:14px;"> <i>Classification accuracy</i> </figcaption> </td>
     <td> <img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/> 
         <figcaption style="text-align:center;color:black;font-size:14px;"> <i> Confusion Matrix </i> </figcaption>  </td>
-
 </tr>
 <tr style='text-align:center; vertical-align:middle'></tr> 
-<table border="1" width='750px'>   
+<table border="1" width='700px'>   
 <tr>    
 <figcaption style="text-align:center;color:black;font-size:14px;"> <i> Best ML-FFT results with SVM - Linear kernel  </i> </figcaption>
 </tr>    
            
+    
         
-        
- INSECT DATASET
-        
-        (2) Class=Fungis. Phylums: Basidiomycota, Pezizomycotina, Saccharomycotina
+##  Fungi DNA sequence classification        
+
+This small dataset is available here: 
         
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
-        
-| Phylum   | Genomes     |  DNA sequence    |    
-| ---     | ---         | ---              |
-|         | (count)     |  (min-max length) |
-| Basidiomycota   |   30       | ML Classification  |
-| Pezizomycotina   | 104       |  ML Classification |
-| Saccharomycotina | 90        |  ML Classification |          
+| Phylum   | Genomes <br>  (count)    |  DNA sequence <br>  (min-max length) |    
+| ---      | ---         | ---              |
+| Basidiomycota   |   30       | 9745 / 235849 |
+| Pezizomycotina   | 104       | 1364 / 203051 |
+| Saccharomycotina | 90        |18844 / 107123 | 
         
         
+ The simple ML-FFT method does not work. We introduce a soft alignment method where we: 
+        - select a NFFT reference frame in each Fungi phylum (sub-phylum)
+        - select an optimal NFFT 
         
-        
-        
-        
-  <table border="1" width='750px'>
-<tr>
-    <td> <img src="LOG_REG_Fungi_accuracy.png" alt="Drawing" style="width: 450px;"/> 
-        <figcaption style="text-align:center;color:black;font-size:14px;"> <i>Classification accuracy</i> </figcaption> </td>
-    <td> <img src="LOG_REG_Fungi_ConfusionMatrix.png" style="width: 450px;"/> 
-        <figcaption style="text-align:center;color:black;font-size:14px;"> <i> Confusion Matrix </i> </figcaption>  </td>
+As in initial ML-FFT method, we keep NFFT small. NFFT=1024 in this study.
+ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98%.    
+ 
 
-</tr>
-<tr style='text-align:center; vertical-align:middle'></tr> 
-<table border="1" width='750px'>   
-<tr>    
-    <figcaption style="text-align:center;color:black;font-size:14px;"> <i> <b>Best ML-FFT+Align</b> results with Logistic regression - solver: newton-cg  </i> </figcaption>
-</tr>          
+        
+| Classification report   | Confusion Matrix   |  
+| ---     | ---         | 
+| <img src="LOG_REG_Fungi_accuracy.png" alt="Drawing" style="width: 350px;"/>         |   <img src="LOG_REG_Fungi_ConfusionMatrix.png" style="width: 350px;"/>   |           
+        
+        
+        
+        
+   
+        
+        
+        
+        
+        
+        
+        
+        
         
         Part I: 
 LINK  JUPYTER NOTEBOOK HERE 

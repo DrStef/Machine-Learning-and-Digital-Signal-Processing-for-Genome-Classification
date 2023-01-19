@@ -39,6 +39,62 @@ For the challenging Fungi dataset, this simple method does not work well, classi
 With this dataset, the authors achieve a 100% accuracy !         
 We select the first NFFT=256, compute the FFT spectrum, we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. Like the autorrs, to measure the performance of such a classifier, we use the 10-fold cross-validation technique.  <br>   
 
+ | Class   | Genomes     | DNA sequence   |    
+| ---     | ---         | ---              |
+|         | (count)     |  (min-max length) |
+| Birds   |   553       | ML Classification  |
+| Fish    | 874         |  ML Classification |
+| Mammals | 2313        |                    |        
+        
+<table border="1" width='750px'>
+<tr>
+    <td> <img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/> 
+        <figcaption style="text-align:center;color:black;font-size:14px;"> <i>Classification accuracy</i> </figcaption> </td>
+    <td> <img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/> 
+        <figcaption style="text-align:center;color:black;font-size:14px;"> <i> Confusion Matrix </i> </figcaption>  </td>
+
+</tr>
+<tr style='text-align:center; vertical-align:middle'></tr> 
+<table border="1" width='750px'>   
+<tr>    
+<figcaption style="text-align:center;color:black;font-size:14px;"> <i> Best ML-FFT results with SVM - Linear kernel  </i> </figcaption>
+</tr>    
+           
+        
+        
+ INSECT DATASET
+        
+        (2) Class=Fungis. Phylums: Basidiomycota, Pezizomycotina, Saccharomycotina
+        
+https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
+
+        
+| Phylum   | Genomes     |  DNA sequence    |    
+| ---     | ---         | ---              |
+|         | (count)     |  (min-max length) |
+| Basidiomycota   |   30       | ML Classification  |
+| Pezizomycotina   | 104       |  ML Classification |
+| Saccharomycotina | 90        |  ML Classification |          
+        
+        
+        
+        
+        
+        
+  <table border="1" width='750px'>
+<tr>
+    <td> <img src="LOG_REG_Fungi_accuracy.png" alt="Drawing" style="width: 450px;"/> 
+        <figcaption style="text-align:center;color:black;font-size:14px;"> <i>Classification accuracy</i> </figcaption> </td>
+    <td> <img src="LOG_REG_Fungi_ConfusionMatrix.png" style="width: 450px;"/> 
+        <figcaption style="text-align:center;color:black;font-size:14px;"> <i> Confusion Matrix </i> </figcaption>  </td>
+
+</tr>
+<tr style='text-align:center; vertical-align:middle'></tr> 
+<table border="1" width='750px'>   
+<tr>    
+    <figcaption style="text-align:center;color:black;font-size:14px;"> <i> <b>Best ML-FFT+Align</b> results with Logistic regression - solver: newton-cg  </i> </figcaption>
+</tr>          
+        
         Part I: 
 LINK  JUPYTER NOTEBOOK HERE 
         

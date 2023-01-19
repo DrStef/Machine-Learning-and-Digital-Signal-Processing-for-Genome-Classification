@@ -47,7 +47,7 @@ Intuitively, if the magnitude of the spectrum describes the contribution (amplit
 
 For the alignement process, we imported additional data: Fungi DNA sequences, stored in folder A_Fungi.
    
-## Birds - Fishes - Mammals DNA seuquence classification. 
+## Birds - Fishes - Mammals DNA sequences classification. 
         
 The dataset is available here:         
 
@@ -85,7 +85,7 @@ We display the best result below.
 The DNA sequence classification of vertebrates, from three different classes is not really a challenge Mammalia is a class of animal within the phylum Chordata      . Some other data sets like: Fungi, Insects, Protists  are more challenging. And we force us to revisit our simple approach.    
               
         
-##  Fungi DNA sequence classification        
+##  Fungi DNA sequences classification        
      
 Our ML-FFT method is inefficient when classifying Fungis in three (sub)-phylums:  . <br> 
 We had to introduce an alignement method for selecting:
@@ -121,4 +121,14 @@ ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98%.
 | Classification report   | Confusion Matrix   |  
 | ---     | ---         | 
 | <img src="LOG_REG_Fungi_accuracy.png" alt="Drawing" style="width: 350px;"/>         |   <img src="LOG_REG_Fungi_ConfusionMatrix.png" style="width: 350px;"/>   |           
-              
+
+
+##  Protists DNA sequences classification 
+
+ML-FFT + Soft Alignement applied to small protists dataset. 
+
+##  Insects DNA sequences classification 
+
+ML-FFT + Soft Alignement applied to large insect dataset. 
+
+

@@ -1,15 +1,15 @@
 # Machine Learning and Digital Signal Processing for Genome Classification
 
 
-Project:  Applying Digital Signal Processing: Fourier Transform, Machine Learning to genome classification. 
+Project:  Applying Digital Signal Processing: FFT, Spectograms, Wavelets and Machine Learning/Deep Learning to genome classification. 
 
-In this project we develop effective methods for classifying mitochondrial genomes (DNA sequences) based on Digital Signal Processing, Machine Learning, Deep Learning. This is on-going research and results will be published on a regular basis. <br>
+In this project we develop effective methods for classifying genomes (DNA sequences) based on Digital Signal Processing, Machine Learning, Deep Learning. This is on-going research and results will be published on a regular basis. <br>
 As a starting point we analyzed the following paper:
 <br>
 <br>
  <i><b> "ML-DSP: Machine Learning with Digital Signal Processing for ultrafast, accurate, and scalable genome classification at all taxonomic levels" </b></i> by Gurjit S. Randhawa , Kathleen A. Hill and Lila Kari. https://doi.org/10.1186/s12864-019-5571-y
 <br><br>
-Their DNA sequence classification method: ML-DSP is very effective. <br> They collected a large number of DNA sequences, and built many datasets for validation purposes: Vertebrates, Fungi, Insects...<br> They report many classification accuracy results. That we will use as reference. <br>
+Their DNA sequence classification method: ML-DSP is very effective and matches or outperforms the acuuracy of best existing methods with DNA sequence alignment. <br> They collected a large number of DNA sequences, and built many datasets for validation purposes: Vertebrates, Fungi, Insects...<br> They thourughly report many classification results. That we will use as reference for our research. <br>
 <br>
 Our objective is to develop methods that outperform the accuracy of ML-DSP with the most challenging datasets: Fungi, Protists, Insects. </ul></ul>
 
@@ -18,19 +18,18 @@ Our objective is to develop methods that outperform the accuracy of ML-DSP with 
 
 ## Datasets       
         
-All datasets are available from Dr. Gurjit S. Randhawa Github repository:
+All datasets are available from Dr. Gurjit S. Randhawa Github repository: 
         
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/
 
-Data was extracted from the National Library of Medicine, National Center for Biotechnology Information (NCBI) website. The database can be searched and mitochondrial genome of various live species: plants, fungi... can be downloaded. 
-
-https://www.ncbi.nlm.nih.gov/labs/gquery/all/?term=NC_001224.1
+Data was extracted from the National Library of Medicine, National Center for Biotechnology Information (NCBI) website. The database can be searched and mitochondrial genome of various live species: plants, fungi... can be downloaded. <br> 
+Illustration with : https://www.ncbi.nlm.nih.gov/labs/gquery/all/?term=NC_001224.1
 
 
           
 ## ML-DSP approach        
         
-The authors propose (we quote) <i> a novel combination of supervised Machine Learning with Digital Signal Processing, resulting in ML-DSP: an alignment-free software tool for ultrafast, accurate, and scalable genome classification at all taxonomic levels. They test ML-DSP by classifying 7396 full mitochondrial genomes at various taxonomic levels, from kingdom to genus, with an average classification accuracy of > 97%. </i> <br> 
+The authors propose (<b><i>we cite</i></b>) <i> a novel combination of supervised Machine Learning with Digital Signal Processing, resulting in ML-DSP: an alignment-free software tool for ultrafast, accurate, and scalable genome classification at all taxonomic levels. They test ML-DSP by classifying 7396 full mitochondrial genomes at various taxonomic levels, from kingdom to genus, with an average classification accuracy of > 97%. </i> <br> 
         
 > Their original ML-DSP approach consists of: 
  <i>"The main idea behind ML-DSP is to combine supervised machine learning techniques with digital signal processing, for the purpose of DNA sequence classification. More precisely, for a given set $S={S_1,S_2,…,S_n}$ of n DNA sequences, ML-DSP uses:</i>

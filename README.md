@@ -45,10 +45,10 @@ The advantage of their method Our results show that ML-DSP overwhelmingly outper
 ## Our approach ML-FFT
  
 Based on the article and abundant bibliography, we asked a few questions: 
-- Is the phase importnat 
-- Can we work with short FFT
-- Can we average spectrums over DNA sequences full length
-- Can we directly feed FFT to Machine Learing algorithms
+- Is the phase important ?  
+- Can we work with short FFT ?
+- Can we average spectrums over DNA sequences full length ?
+- Can we directly feed the FFT spectrum to Machine Learning classifiation algorithms ?
 
 In the initial implementation ML-FFT we achieved 100% accuracy with the vertebrate dataset: biurds-fish-mammals by:
 - selecting the first NFFT=1024 points of each sequence, 

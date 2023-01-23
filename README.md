@@ -76,13 +76,13 @@ Dataset:
         
 With this dataset, the authors achieve <b> 100% accuracy </b> with the ML-DSP method !         
 <br>
-We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum.  We tested our apporach with and without the spectrum phase.  Some results are reported in the table below.  we keep the phase. And without any particular pre-processing we achieve a 98-99% accuracy with Logistic Regression and SVM. After optimising hypermparameters. Like the autorrs, to measure the performance of such a classifier, we use the 10-fold cross-validation technique.  <br>   
+We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum. <br>  We tested the ML-FFT approach with and without the spectrum phase.  Some results are reported in the table below.  It looks like the phase add some value with very short sequences NFFT=256, 512. <br> Optimal results were achieved with NFFT=1024 and 2048. The phase was not instrumental. <br>  Without any particular pre-processing we achieve an accuracy close to 100% with Logistic Regression and SVM. <br> Like the autorrs, to measure the performance of such a classifier, we optimized hyperparamters and used the 10-fold cross-validation technique.  <br>   
 
 
         
 | Approach                                 | Accuracy |      ML Technique         |
 | ---                                      | ---      |   ---                     |
-|First NFFT=  512 points                   |  97-98%  |       SVM  rbf kernel     | 
+|First NFFT=  256 points                   |  97-98%  |       SVM  rbf kernel     | 
 |First NFFT=  512 points                   |  97-98%  |       SVM  rbf kernel     | 
 |First NFFT= 1024 Magnitude+Phase (1024 features) | <b> ~100% </b> |  SVM linear kernel     |
 |First NFFT= 1024 Magnitude only (512 features) | <b> ~100% </b>   |    SVM  rbf kernel     |  

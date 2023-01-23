@@ -98,30 +98,27 @@ The DNA sequence classification of vertebrates, from three different classes is 
               
         
 ##  Fungi DNA sequences classification        
-     
-Our ML-FFT method is inefficient when classifying Fungis in three (sub)-phylums:  . <br> 
-We had to introduce an alignement method for selecting:
-- 3 reference DNA sequence frames
-- optimal DNA sequence frames (length 256 points) before computiong the FFT.  
-<br>
-At least in a first phase of this project we rely on "soft" alignement for selecting optimal frame, and achieveing a **94%** acuracy with SVM and rbf kernel. After optimizing hyperparameters. Which is better than the best result achived by the authors. The main drawback of our method is a very process of alignement presented in.
-        
+    
 This small dataset is available here: 
         
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
 | Phylum   | Genomes <br>  (count)    |  DNA sequence <br>  (min-max length) |    
-| ---      | ---         | ---              |
+| ---      |              ---         |                     ---              |
 | Basidiomycota   |   30       | 9745 / 235849 |
 | Pezizomycotina   | 104       | 1364 / 203051 |
 | Saccharomycotina | 90        |18844 / 107123 | 
         
-For the challenging Fungi dataset, this simple method does not work well, classifcation returns dsipapointing results and we had to develop a DNA sequence alignement method based on cross correlatio acting like a pre-classification filter.  <br>
-The simple ML-FFT method does not work. We introduce a soft alignment method where we: 
+For the challenging Fungi dataset, the simple ML-FFT method does not work. We introduce a soft alignment method where we: 
 - select a NFFT reference frame in each Fungi phylum (sub-phylum)
 - select an optimal NFFT 
+-   . <br> 
+We had to introduce an alignement method for selecting:
+- 3 reference DNA sequence frames
+- optimal DNA sequence frames (length NFFT= 1024 points) before computiong the FFT.  
+<br>
         
-As in initial ML-FFT method, we keep NFFT small. NFFT=1024 in this study.
+As in initial ML-FFT method, we keep NFFT small. NFFT=1024 in this study. <br>
 ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98%.    
  
             

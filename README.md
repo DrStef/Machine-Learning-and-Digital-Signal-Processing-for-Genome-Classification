@@ -118,8 +118,8 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
         
 For the challenging Fungi dataset, this simple method does not work well, classifcation returns dsipapointing results and we had to develop a DNA sequence alignement method based on cross correlatio acting like a pre-classification filter.  <br>
 The simple ML-FFT method does not work. We introduce a soft alignment method where we: 
-        - select a NFFT reference frame in each Fungi phylum (sub-phylum)
-        - select an optimal NFFT 
+- select a NFFT reference frame in each Fungi phylum (sub-phylum)
+- select an optimal NFFT 
         
 As in initial ML-FFT method, we keep NFFT small. NFFT=1024 in this study.
 ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98%.    

@@ -9,11 +9,13 @@ As a starting point we analyzed the following paper:
 <br>
  <i><b> "ML-DSP: Machine Learning with Digital Signal Processing for ultrafast, accurate, and scalable genome classification at all taxonomic levels" </b></i> by Gurjit S. Randhawa , Kathleen A. Hill and Lila Kari. https://doi.org/10.1186/s12864-019-5571-y
 <br><br>
+*Department of Computer Science, University of Western Ontario, London, ON, Canada*  <br>
+<br>
 Their DNA sequence classification method: ML-DSP is very effective and matches or outperforms the acuuracy of best existing methods with DNA sequence alignment. <br> They collected a large number of DNA sequences, and built many datasets for validation purposes: Vertebrates, Fungi, Insects...<br> They thourughly report many classification results. That we will use as reference for our research. <br>
 <br>
 Our objective is to develop methods that outperform the accuracy of ML-DSP with the most challenging datasets: Fungi, Protists, Insects. </ul></ul>
 
-*Department of Computer Science, University of Western Ontario, London, ON, Canada
+
 
 
 ## Datasets       

@@ -70,7 +70,6 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
 Dataset:
 | Class   | Genomes  <br> (count)   |  
 | ---     | ---         | 
-|         |      |  
 | Birds   |   553       | 
 | Fish    | 874         | 
 | Mammals | 2313        |       

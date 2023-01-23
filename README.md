@@ -52,12 +52,12 @@ Based on the article and abundant bibliography, we asked a few questions:
 
 In the initial implementation ML-FFT we achieved 100% accuracy with the vertebrate dataset: biurds-fish-mammals by:
 - selecting the first NFFT=1024 points of each sequence, 
-- applying window and high pass filter at very low frequency
-- we fed one-sided spectrum (frequency reponse) to Machine Learning algorithms: Logistic Regression, SVM.  
-
+- applying window and a high-pass filter at very low frequency
+- by feeding one-sided spectrum (frequency response) to Machine Learning classification algorithms: Logistic Regression, SVM.  
+<br>
 This simple method did not work with more challenging datasets in similar class: Fungi. <br>
-We introduced a fast "soft" DNA sequence alignment method (soft Align) with short DNA subsequences, length NFFT=1024. Based on a reference DNA sequence and cross-correlation.   <br>
-The combination ML-FFT + Soft Align achieved a 96 to 98% accuracy with the Fungi dataset. Outperforming the Ml-DSP method.    
+We then introduced a fast "soft" DNA sequence alignment method (soft Align) with short DNA subsequences, length NFFT=1024. Based on a reference DNA sequence and cross-correlation of pairs of NFFT subsquences (frames). <br>
+The combination ML-FFT + Soft Align achieved a 96 to 98% accuracy with the Fungi dataset. Outperforming the ML-DSP method.    
 
 
    

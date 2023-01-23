@@ -82,7 +82,6 @@ We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then co
         
 | Approach                                 | Accuracy |      ML Technique         |
 | ---                                      | ---      |   ---                     |
-|First NFFT=  256 points                   |  97-98%  |       SVM  rbf kernel     | 
 |First NFFT=  512 points                   |  97-98%  |       SVM  rbf kernel     | 
 |First NFFT= 1024 Magnitude+Phase (1024 features) | <b> ~100% </b> |  SVM linear kernel     |
 |First NFFT= 1024 Magnitude only (512 features) | <b> ~100% </b>   |    SVM  rbf kernel     |  

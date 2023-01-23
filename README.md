@@ -77,7 +77,7 @@ Dataset:
         
 With this dataset, the authors achieve <b> 100% accuracy </b> with the ML-DSP method !         
 <br>
-We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum. <br>  We tested the ML-FFT approach with and without the spectrum phase.  Some results are reported in the table below.  It looks like the phase add some value with very short sequences NFFT=256, 512. <br> Optimal results were achieved with NFFT=1024 and 2048. The phase was not instrumental. <br>  Without any particular pre-processing we achieve an accuracy close to 100% with Logistic Regression and SVM. <br> Like the autorrs, to measure the performance of such a classifier, we optimized hyperparamters and used the 10-fold cross-validation technique.  <br>   
+We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum. <br>  We tested the ML-FFT approach with and without the spectrum phase.  Some results are reported in the table below.  It looks like the phase add some value with very short sequences NFFT=256, 512. <br> Optimal results were achieved with NFFT=1024 and 2048. The phase was not instrumental. <br>  Without any particular pre-processing we achieve an accuracy close to 100% with Logistic Regression and SVM. <br> Like the authors, to measure the performance of such a classifier, we optimized hyperparamters and used the 10-fold cross-validation technique.  <br>   
 
 
         
@@ -101,8 +101,9 @@ The DNA sequence classification of vertebrates, from three different classes is 
      
 Our ML-FFT method is inefficient when classifying Fungis in three (sub)-phylums:  . <br> 
 We had to introduce an alignement method for selecting:
-         - 3 reference DNA sequence frames 
-         - optimal DNA sequence frames (length 256 points) before computiong the FFT.  
+- 3 reference DNA sequence frames
+- optimal DNA sequence frames (length 256 points) before computiong the FFT.  
+<br>
 At least in a first phase of this project we rely on "soft" alignement for selecting optimal frame, and achieveing a **94%** acuracy with SVM and rbf kernel. After optimizing hyperparameters. Which is better than the best result achived by the authors. The main drawback of our method is a very process of alignement presented in.
         
 This small dataset is available here: 

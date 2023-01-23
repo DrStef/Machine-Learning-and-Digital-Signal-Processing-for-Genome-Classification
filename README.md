@@ -42,10 +42,22 @@ The advantage of their method Our results show that ML-DSP overwhelmingly outper
 
 ## Our approach ML-FFT
  
-We notice that spectrum phases are left aside in the 
-Intuitively, if the magnitude of the spectrum describes the contribution (amplitude, energy if M^2) of various "trains" of signal oscillations, the phase adds an important information about their relative positions. And we should not leave this information aside.  
+Based on the article and abundant bibliography, we asked a few questions: 
+- Is the phase importnat 
+- Can we work with short FFT
+- Can we average spectrums over DNA sequences full length
+- Can we directly feed FFT to Machine Learing algorithms
 
-For the alignement process, we imported additional data: Fungi DNA sequences, stored in folder A_Fungi.
+In the initial implementation ML-FFT we achieved 100% accuracy with the vertebrate dataset: biurds-fish-mammals by:
+- selecting the first NFFT=1024 points of each sequence, 
+- applying window and high pass filter at very low frequency
+- we fed one-sided spectrum (frequency reponse) to Machine Learning algorithms: Logistic Regression, SVM.  
+
+This simple method did not work with more challenging datasets in similar class: Fungi. <br>
+We introduced a fast "soft" DNA sequence alignment method (soft Align) with short DNA subsequences, length NFFT=1024. Based on a reference DNA sequence and cross-correlation.   <br>
+The combination ML-FFT + Soft Align achieved a 96 to 98% accuracy with the Fungi dataset. Outperforming the Ml-DSP method.    
+
+
    
 ## Birds - Fishes - Mammals DNA sequences classification. 
         

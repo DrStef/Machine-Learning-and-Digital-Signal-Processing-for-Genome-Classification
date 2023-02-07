@@ -65,7 +65,7 @@ Dataset:
         
 With this dataset, the authors achieve <b> 100% accuracy </b> with the ML-DSP method ! Results with our classification method are presented below. 
 <br>
-We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum. <br>  We tested the ML-FFT approach with and without the spectrum phase.  Some results are reported in the table below.  It looks like the phase add some value with very short sequences NFFT=256, 512. <br> Optimal results were achieved with NFFT=1024 and 2048. The phase was not instrumental. <br>  Without any particular pre-processing we achieve an accuracy close to 100% with Logistic Regression and SVM. <br> Like the authors, to measure the performance of such a classifier, we optimized hyperparamters and used the 10-fold cross-validation technique.  <br>   
+We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum. <br>  We tested the ML-FFT approach with and without the spectrum phase.  Some results are reported in the table below.  It looks like the phase add some value with very short sequences NFFT=256, 512. <br> Optimal results were achieved with NFFT=1024 and 2048. The phase was not instrumental. <br>  Without any particular pre-processing we achieve an accuracy close to 100% with Logistic Regression and SVM. <br> Like the authors, to measure the performance of such a classifier, we optimized hyperparameters and used the 10-fold cross-validation technique.  <br>   
         
 | Approach                                 | Accuracy |      ML Technique         |
 | ---                                      | ---      |   ---                     |
@@ -80,7 +80,7 @@ We display the best result below.
 | ---     | ---         | 
 | <img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/>   |       
 
-The DNA sequence classification of vertebrates, from three different classes is not really a challenge Mammalia is a class of animal within the phylum Chordata      . Some other data sets like: Fungi, Insects, Protists  are more challenging. And we force us to revisit our simple approach.    
+The DNA sequence classification of vertebrates, from three different classes is not really a challenge Mammalia is a class of animal within the phylum Chordata      . Classification with other data sets like: Fungi, Insects, Protists is more challenging.   
               
         
 ##  ML-FFT + "Soft Align"  -  Fungi DNA sequences classification        
@@ -98,7 +98,7 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 For the challenging Fungi dataset, the simple ML-FFT method does not work. We introduce a soft alignment method ("Soft Align") where:
 - all frames length NFFT= 1024 points
 - we select a NFFT reference frame in each Fungi phylum (sub-phylum). Three reference frames are indetified. 
-- we select an optimal NFFT frame for each DNA sequence in each Fungi phylum. By comparison with the three reference frame. 
+- we select an optimal NFFT frame for each DNA sequence in each Fungi phylum. By comparison (cross-correlation) with the three reference frames. 
 - then we applied the simple ML-FFT method on optimal NFFT frames. 
 
 <b> ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98% in a reasonable time.</b>  

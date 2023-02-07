@@ -40,33 +40,21 @@ The authors propose (<b><i>we cite</i></b>) <i> a novel combination of supervise
         <ul><ul> Pearson Correlation Coefficient (PCC) to compute the distance matrix of all pairwise distances for each pair of magnitude spectra $(M_i,M_j)$, where 1≤i,j≤n  </ul></ul>
         <ul><ul> Supervised Machine Learning classifiers which take the pairwise distance matrix for a set of sequences. </ul></ul>
      
-The advantage of their method Our results show that ML-DSP overwhelmingly outperforms the alignment-based software MEGA7 (alignment with MUSCLE or CLUSTALW) in terms of processing time, while having comparable classification accuracies for small datasets and superior accuracies for the large dataset. Compared with the alignment-free software FFP (Feature Frequency Profile), ML-DSP has significantly better classification accuracy, and is overall faster. We also provide preliminary experiments indicating the potential of ML-DSP to be used for other datasets, by classifying 4271 complete dengue virus genomes into subtypes with 100% accuracy, and 4,710 bacterial genomes into phyla with 95.5% accuracy. Lastly, our analysis shows that the “Purine/Pyrimidine”, “Just-A” and “Real” numerical representations of DNA sequences outperform ten other such numerical representations used in the Digital Signal Processing literature for DNA classification purposes.  
+Their results show that ML-DSP overwhelmingly outperforms the alignment-based software MEGA7 (alignment with MUSCLE or CLUSTALW) in terms of processing time, while having comparable classification accuracies for small datasets and superior accuracies for the large dataset. Compared with the alignment-free software FFP (Feature Frequency Profile), ML-DSP has significantly better classification accuracy than method and is overall faster. 
 
-## Our approach ML-FFT
+## Our initial approach: ML-FFT
  
-Based on the article and abundant bibliography, we asked a few questions: 
-- Is the phase important ?  
-- Can we work with short FFT ?
-- Can we average spectrums over DNA sequences full length ?
-- Can we directly feed the FFT spectrum to Machine Learning classifiation algorithms ?
-
-In the initial implementation ML-FFT we achieved 100% accuracy with the vertebrate dataset: biurds-fish-mammals by:
-- selecting the first NFFT=1024 points of each sequence, 
-- applying window and a high-pass filter at very low frequency
-- by feeding one-sided spectrum (frequency response) to Machine Learning classification algorithms: Logistic Regression, SVM.  
+In the initial ML-FFT  implementation we achieved 100% accuracy with the vertebrate dataset "birds-fish-mammals" by:
+- selecting the first NFFT=1024 points of each DNA sequence, 
+- applying window and a very low frequency high-pass filter 
+- feeding one-sided spectrum (frequency response) to Machine Learning classification algorithms: Logistic Regression, SVM.  
 <br>
-This simple method did not work with more challenging datasets in similar class: Fungi. <br>
-We then introduced a fast "soft" DNA sequence alignment method (soft Align) with short DNA subsequences, length NFFT=1024. Based on a reference DNA sequence and cross-correlation of pairs of NFFT subsquences (frames). <br>
-The combination ML-FFT + Soft Align achieved a 96 to 98% accuracy with the Fungi dataset. Outperforming the ML-DSP method.    
-
-
-   
-## Birds - Fishes - Mammals DNA sequences classification. 
-        
-The dataset is available here:         
-
+This simple method did not work with more challenging datasets like the Fungi dataset. <br>
+<br>
+The Birds - Fishes - Mammals DNA sequences dataset is available here:         
+<br>
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
-        
+
 Dataset:
 | Class   | Genomes  <br> (count)   |  
 | ---     | ---         | 
@@ -75,11 +63,9 @@ Dataset:
 | Mammals | 2313        |       
       
         
-With this dataset, the authors achieve <b> 100% accuracy </b> with the ML-DSP method !         
+With this dataset, the authors achieve <b> 100% accuracy </b> with the ML-DSP method ! Results with our classification method are presented below. 
 <br>
 We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum. <br>  We tested the ML-FFT approach with and without the spectrum phase.  Some results are reported in the table below.  It looks like the phase add some value with very short sequences NFFT=256, 512. <br> Optimal results were achieved with NFFT=1024 and 2048. The phase was not instrumental. <br>  Without any particular pre-processing we achieve an accuracy close to 100% with Logistic Regression and SVM. <br> Like the authors, to measure the performance of such a classifier, we optimized hyperparamters and used the 10-fold cross-validation technique.  <br>   
-
-
         
 | Approach                                 | Accuracy |      ML Technique         |
 | ---                                      | ---      |   ---                     |
@@ -97,9 +83,9 @@ We display the best result below.
 The DNA sequence classification of vertebrates, from three different classes is not really a challenge Mammalia is a class of animal within the phylum Chordata      . Some other data sets like: Fungi, Insects, Protists  are more challenging. And we force us to revisit our simple approach.    
               
         
-##  Fungi DNA sequences classification        
+##  ML-FFT + "Soft Align"  -  Fungi DNA sequences classification        
     
-This small dataset is available here: 
+The small Fungi dataset is available here: 
         
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
@@ -108,20 +94,15 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 | Basidiomycota   |   30       | 9745 / 235849 |
 | Pezizomycotina   | 104       | 1364 / 203051 |
 | Saccharomycotina | 90        |18844 / 107123 | 
-        
-For the challenging Fungi dataset, the simple ML-FFT method does not work. We introduce a soft alignment method where we: 
-- select a NFFT reference frame in each Fungi phylum (sub-phylum)
-- select an optimal NFFT 
--   . <br> 
-We had to introduce an alignement method for selecting:
-- 3 reference DNA sequence frames
-- optimal DNA sequence frames (length NFFT= 1024 points) before computiong the FFT.  
-<br>
-        
-As in initial ML-FFT method, we keep NFFT small. NFFT=1024 in this study. <br>
-ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98%.    
+  
+For the challenging Fungi dataset, the simple ML-FFT method does not work. We introduce a soft alignment method ("Soft Align") where:
+- all frames length NFFT= 1024 points
+- we select a NFFT reference frame in each Fungi phylum (sub-phylum). Three reference frames are indetified. 
+- we select an optimal NFFT frame for each DNA sequence in each Fungi phylum. By comparison with the three reference frame. 
+- then we applied the simple ML-FFT method on optimal NFFT frames. 
+
+<b> ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98% in a reasonable time.</b>  
  
-            
 | ML-FFT + Soft Align Approach  | Accuracy  |      ML Technique   |
 | ---      | ---         |   ---      |
 |NFFT= 1024 points Magnitude only (512 features)  | <b> 96% </b>    |  Logistic Regression newton-cg solver <br> SVM "rbf" solver  |

@@ -80,7 +80,7 @@ We display the best result below.
 | ---     | ---         | 
 | <img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/>   |       
 
-The DNA sequence classification of vertebrates, from three different classes is not really a challenge. Classification within a same and data sets: Fungi, Insects, is much more challenging.   
+The DNA sequence classification of vertebrates, from three different classes is not really a challenge. Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.   
               
         
 ##  ML-FFT + "Soft Align"  -  Fungi DNA sequences classification        

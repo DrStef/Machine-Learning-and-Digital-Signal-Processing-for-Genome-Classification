@@ -41,6 +41,7 @@ The authors propose (<b><i>we cite</i></b>) <i> a novel combination of supervise
         <ul><ul> Supervised Machine Learning classifiers which take the pairwise distance matrix for a set of sequences. </ul></ul>
      
 Their results show that ML-DSP overwhelmingly outperforms the alignment-based software MEGA7 (alignment with MUSCLE or CLUSTALW) in terms of processing time, while having comparable classification accuracies for small datasets and superior accuracies for the large dataset. Compared with the alignment-free software FFP (Feature Frequency Profile), ML-DSP has significantly better classification accuracy than method and is overall faster. 
+<br>
 
 ## Our initial approach: ML-FFT
  
@@ -82,7 +83,8 @@ We display the best result below.
 
 
 The DNA sequence classification of vertebrates, from three different classes is not really a challenge. Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.   
-              
+
+<br>
         
 ##  ML-FFT + "Soft Align"  -  Fungi DNA sequences classification        
     
@@ -115,6 +117,7 @@ For the challenging Fungi dataset, the simple ML-FFT method does not work. We in
 | ---     | ---         | 
 |<p align="center"> <sub><b><i> Classification report </i></b></sub>  </p> | <p align="center"> <sub><b><i>  Confusion Matrix  </i></b></sub> </p>  |   
 
+<br>
 
 ##  Insects DNA sequences classification 
 
@@ -127,7 +130,7 @@ ML-FFT + Soft Alignement applied to insect dataset.
 | ---     | ---         | 
 |<p align="center"> <sub><b><i> Classification report </i></b></sub>  </p> | <p align="center"> <sub><b><i>  Confusion Matrix  </i></b></sub> </p>  |  
 
-
+<br>
 
 
 ##  Protists DNA sequences classification 

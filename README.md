@@ -112,14 +112,25 @@ For the challenging Fungi dataset, the simple ML-FFT method does not work. We in
 | Classification report   | Confusion Matrix   |  
 | ---     | ---         | 
 | <img src="LOG_REG_Fungi_accuracy.png" alt="Drawing" style="width: 350px;"/>         |   <img src="LOG_REG_Fungi_ConfusionMatrix.png" style="width: 350px;"/>   |           
+##  Insects DNA sequences classification 
+
+ML-FFT + Soft Alignement applied to insect dataset. 
+
+
+
+
+| <img src="Insect_Classification_99pc.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Insect_ConfusionMatrix_99pc.png" style="width: 350px;"/>   | 
+| ---     | ---         | 
+| Classification report   | Confusion Matrix   | 
+
+
+
 
 
 ##  Protists DNA sequences classification 
 
 ML-FFT + Soft Alignement applied to small protists dataset. 
 
-##  Insects DNA sequences classification 
 
-ML-FFT + Soft Alignement applied to large insect dataset. 
 
 

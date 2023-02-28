@@ -76,9 +76,10 @@ We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then co
         
 We display the best result below.  
         
-| Classification report   | Confusion Matrix   |  
-| ---     | ---         | 
-| <img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/>   |       
+|<img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/> |<img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/>   | 
+| ---     | ---         |       
+| <sub><b><i> Classification report </i></b></sub>   | <sub><b><i>  Confusion Matrix  </i></b></sub>  |  
+
 
 The DNA sequence classification of vertebrates, from three different classes is not really a challenge. Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.   
               
@@ -109,9 +110,12 @@ For the challenging Fungi dataset, the simple ML-FFT method does not work. We in
 |NFFT= 1024 points Magnitude + Phase (1024 features) | <b> 98% </b>    |  Logistic Regression newton-cg solver         |
 
         
-| Classification report   | Confusion Matrix   |  
+
+| <img src="LOG_REG_Fungi_accuracy.png" alt="Drawing" style="width: 350px;"/>         |   <img src="LOG_REG_Fungi_ConfusionMatrix.png" style="width: 350px;"/>   |     
 | ---     | ---         | 
-| <img src="LOG_REG_Fungi_accuracy.png" alt="Drawing" style="width: 350px;"/>         |   <img src="LOG_REG_Fungi_ConfusionMatrix.png" style="width: 350px;"/>   |           
+| <sub><b><i> Classification report </i></b></sub>   | <sub><b><i>  Confusion Matrix  </i></b></sub>  |  
+
+
 ##  Insects DNA sequences classification 
 
 ML-FFT + Soft Alignement applied to insect dataset. 
@@ -121,8 +125,7 @@ ML-FFT + Soft Alignement applied to insect dataset.
 
 | <img src="Insect_Classification_99pc.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Insect_ConfusionMatrix_99pc.png" style="width: 350px;"/>   | 
 | ---     | ---         | 
-| Classification report   | Confusion Matrix   | 
-
+| <sub><b><i> Classification report </i></b></sub>   | <sub><b><i>  Confusion Matrix  </i></b></sub>  |   
 
 
 

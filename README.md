@@ -78,7 +78,7 @@ We display the best result below.
         
 |<img src="SVM_Bird_Fish_Mammal_Classification.png" alt="Drawing" style="width: 350px;"/> |<img src="Bird_Fish_Mammal_SVM.png" style="width: 350px;"/>   | 
 | ---     | ---         |       
-| <sub><b><i> Classification report </i></b></sub>   | <sub><b><i>  Confusion Matrix  </i></b></sub>  |  
+|<p align="center"> <sub><b><i> Classification report </i></b></sub>  </p> | <p align="center"> <sub><b><i>  Confusion Matrix  </i></b></sub> </p>  |  
 
 
 The DNA sequence classification of vertebrates, from three different classes is not really a challenge. Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.   
@@ -113,7 +113,7 @@ For the challenging Fungi dataset, the simple ML-FFT method does not work. We in
 
 | <img src="LOG_REG_Fungi_accuracy.png" alt="Drawing" style="width: 350px;"/>         |   <img src="LOG_REG_Fungi_ConfusionMatrix.png" style="width: 350px;"/>   |     
 | ---     | ---         | 
-| <sub><b><i> Classification report </i></b></sub>   | <sub><b><i>  Confusion Matrix  </i></b></sub>  |  
+|<p align="center"> <sub><b><i> Classification report </i></b></sub>  </p> | <p align="center"> <sub><b><i>  Confusion Matrix  </i></b></sub> </p>  |   
 
 
 ##  Insects DNA sequences classification 
@@ -125,7 +125,7 @@ ML-FFT + Soft Alignement applied to insect dataset.
 
 | <img src="Insect_Classification_99pc.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Insect_ConfusionMatrix_99pc.png" style="width: 350px;"/>   | 
 | ---     | ---         | 
-| <sub><b><i> Classification report </i></b></sub>   | <sub><b><i>  Confusion Matrix  </i></b></sub>  |   
+|<p align="center"> <sub><b><i> Classification report </i></b></sub>  </p> | <p align="center"> <sub><b><i>  Confusion Matrix  </i></b></sub> </p>  |  
 
 
 

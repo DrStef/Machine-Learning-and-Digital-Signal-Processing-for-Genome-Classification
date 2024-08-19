@@ -44,7 +44,9 @@ Their results show that ML-DSP overwhelmingly outperforms the alignment-based so
 <br>
 
 ## Our initial approach: ML-FFT
- 
+
+<b> Methodology </b>
+
 In the initial ML-FFT  implementation we achieved 100% accuracy with the vertebrate dataset "birds-fish-mammals" by:
 - selecting the first NFFT=1024 points of each DNA sequence, 
 - applying window and a very low frequency high-pass filter 
@@ -52,11 +54,14 @@ In the initial ML-FFT  implementation we achieved 100% accuracy with the vertebr
 <br>
 This simple method did not work with more challenging datasets like the Fungi dataset. <br>
 <br>
+
+<b> Birds - Fishes - Mammals dataset </b>
+
 The Birds - Fishes - Mammals DNA sequences dataset is available here:         
 <br>
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Birds-Fish-Mammals
 
-Dataset:
+
 | Class   | Genomes  <br> (count)   |  
 | ---     | ---         | 
 | Birds   |   553       | 
@@ -66,6 +71,9 @@ Dataset:
         
 With this dataset, the authors achieve <b> 100% accuracy </b> with the ML-DSP method ! Results with our classification method are presented below. 
 <br>
+
+<b> Results </b>
+
 We selected the first NFFT=256, 512, 1024, 2048 in each DNA sequence and then computed the FFT spectrum. <br>  We tested the ML-FFT approach with and without the spectrum phase.  Some results are reported in the table below.  It looks like the phase add some value with very short sequences NFFT=256, 512. <br> Optimal results were achieved with NFFT=1024 and 2048. The phase was not instrumental. <br>  Without any particular pre-processing we achieve an accuracy close to 100% with Logistic Regression and SVM. <br> Like the authors, to measure the performance of such a classifier, we optimized hyperparameters and used the 10-fold cross-validation technique.  <br>   
         
 | Approach                                 | Accuracy |      ML Technique         |
@@ -84,8 +92,6 @@ We display the best result below.
 The DNA sequence classification of vertebrates, from three different classes is not really a challenge. Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.   
 
 <b>Jupyter Notebooks:</b> 
-
-
 
 <br>
         
@@ -107,11 +113,11 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
 For the challenging Fungi dataset, the simple ML-FFT method does not work. We introduce a soft alignment method ("Soft Align") where:
 - all frames length NFFT= 1024 points
-- we select a NFFT reference frame in each Fungi phylum (sub-phylum). Three reference frames are indetified. 
+- we select a NFFT reference frame in each Fungi phylum (sub-phylum). Three reference frames are identified. 
 - we select an optimal NFFT frame for each DNA sequence in each Fungi phylum. By comparison (cross-correlation) with the three reference frames. 
-- then we applied the simple ML-FFT method on optimal NFFT frames. 
+- then we applied the simple ML-FFT method on <i> optimal NFFT frames </i>. 
 
-<b> ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98% in a reasonable time.</b>  
+<b> The ML-FFT + Soft Align outperforms ML-DSP with accuracy between 96 to 98% in a reasonable time.</b>  
  
 | ML-FFT + Soft Align Approach  | Accuracy  |      ML Technique   |
 | ---      | ---         |   ---      |
@@ -128,7 +134,7 @@ For the challenging Fungi dataset, the simple ML-FFT method does not work. We in
 
 <b>Jupyter Notebooks:</b> 
 
-<i> Soft Align </i> with cross correlation. Determination of reference frames for each class.
+<i> Soft Align </i> method with cross-correlation. Determination of reference frames for each class.
 
 #### <ul>[Part II a: Matching of Fungi DNA sub-sequences with cross-correlation](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA_Fungi_DNA_Sequence_Alignment_with_CrossCorrelation_v5.ipynb)</ul>
 
@@ -139,6 +145,11 @@ Full classification after importing reference frames for each class.
 <br>
 
 ##  Insects DNA sequences classification 
+
+Excellent results were achieved using the method described in the previous section. This part is left as an exercise. <br>
+We used a subset of the Insect DNA sequence dataset for the soft-align process. Which may introuduce a bias. 
+But it was difficult to collect more sequences on the website of the National Center for Biotechnology Information (NCBI). <br>
+We may post the Jupyter notebook in the future. 
 
 <b> Results </b> 
 
@@ -153,8 +164,8 @@ ML-FFT + Soft Alignement applied to insect dataset.
 
 ##  Protists DNA sequences classification 
 
-ML-FFT + Soft Alignement applied to small protists dataset. 
-
+We did not test the ML-FFT + Soft Alignement method with the small protists dataset. 
+More data is needed for the initial stage:  DNA sequence alignement and definition of the reference DNA frames. 
 
 
 

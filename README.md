@@ -81,14 +81,19 @@ We display the best result below.
 | ---     | ---         |       
 |<p align="center"> <sub><b><i> Classification report </i></b></sub>  </p> | <p align="center"> <sub><b><i>  Confusion Matrix  </i></b></sub> </p>  |  
 
-
 The DNA sequence classification of vertebrates, from three different classes is not really a challenge. Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.   
+
+<b>Jupyter Notebooks:</b> 
+
+
 
 <br>
         
 ##  ML-FFT + "Soft Align"  -  Fungi DNA sequences classification        
-    
-The small Fungi dataset is available here: 
+
+<b> Fungi dataset</b> 
+
+It is available here: 
         
 https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 
@@ -97,7 +102,9 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 | Basidiomycota   |   30       | 9745 / 235849 |
 | Pezizomycotina   | 104       | 1364 / 203051 |
 | Saccharomycotina | 90        |18844 / 107123 | 
-  
+
+<b> Results</b> 
+
 For the challenging Fungi dataset, the simple ML-FFT method does not work. We introduce a soft alignment method ("Soft Align") where:
 - all frames length NFFT= 1024 points
 - we select a NFFT reference frame in each Fungi phylum (sub-phylum). Three reference frames are indetified. 
@@ -119,12 +126,23 @@ For the challenging Fungi dataset, the simple ML-FFT method does not work. We in
 
 <br>
 
+<b>Jupyter Notebooks:</b> 
+
+<i> Soft Align </i> with cross correlation. Determination of reference frames for each class.
+
+#### <ul>[Part II a: Matching of Fungi DNA sub-sequences with cross-correlation](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA_Fungi_DNA_Sequence_Alignment_with_CrossCorrelation_v5.ipynb)</ul>
+
+Full classification after importing reference frames for each class. 
+
+#### <ul>[Part II b: ML Supervised Classification of Fungis DNA sequences](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA_Sequence_Classification_Fungi_Alignment_Process_PP_v016.ipynb)</ul>
+
+<br>
+
 ##  Insects DNA sequences classification 
 
+<b> Results </b> 
+
 ML-FFT + Soft Alignement applied to insect dataset. 
-
-
-
 
 | <img src="Insect_Classification_99pc.png" alt="Drawing" style="width: 350px;"/>         |   <img src="Insect_ConfusionMatrix_99pc.png" style="width: 350px;"/>   | 
 | ---     | ---         | 

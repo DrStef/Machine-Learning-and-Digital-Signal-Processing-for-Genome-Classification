@@ -89,7 +89,11 @@ We display the best result below.
 | ---     | ---         |       
 |<p align="center"> <sub><b><i> Classification report </i></b></sub>  </p> | <p align="center"> <sub><b><i>  Confusion Matrix  </i></b></sub> </p>  |  
 
-The DNA sequence classification of vertebrates, from three different classes is not really a challenge. Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.   
+- The DNA sequence classification of vertebrates, with three different classes is not really a challenge. 
+- Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.
+- We tested other ML models: K Nearest Neighbor(KNN), Random Forest Classifier, Decision Tree with accuracy in the 96-98% range. Not as efficient as SVM. They are left as an exercise. 
+
+
 
 <b>Jupyter Notebooks:</b> 
 

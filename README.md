@@ -98,7 +98,7 @@ We display the best result below.
 <b>Jupyter Notebooks:</b> 
 
 
-#### <ul>[𝐏𝐚𝐫𝐭 𝐈: 𝐒𝐮𝐩𝐞𝐫𝐯𝐢𝐬𝐞𝐝 𝐂𝐥𝐚𝐬𝐬𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐨𝐟 𝐁𝐢𝐫𝐝𝐬, 𝐅𝐢𝐬𝐡𝐞𝐬, 𝐌𝐚𝐦𝐦𝐚𝐥𝐬](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA%20Sequence%20Classification_Bird_Fish_Mammal_ML-FFT_v12.ipynb)</ul>
+#### <ul>[Part I: Supervised Classification of Birds, Fishes, Mammals](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA%20Sequence%20Classification_Bird_Fish_Mammal_ML-FFT_v12.ipynb)</ul>
 
 
 <br>

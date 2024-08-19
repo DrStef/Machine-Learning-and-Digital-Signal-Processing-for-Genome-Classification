@@ -97,6 +97,13 @@ The DNA sequence classification of vertebrates, from three different classes is 
         
 ##  ML-FFT + "Soft Align"  -  Fungi DNA sequences classification        
 
+<b> Methodology </b> 
+
+The methodology is described in the Jupyter Notebook  Part IIa. 
+
+
+
+
 <b> Fungi dataset</b> 
 
 It is available here: 
@@ -108,6 +115,16 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 | Basidiomycota   |   30       | 9745 / 235849 |
 | Pezizomycotina   | 104       | 1364 / 203051 |
 | Saccharomycotina | 90        |18844 / 107123 | 
+
+We created additional datasets for running the <i>soft-align</i> procedure and identifying reference DNA frames. In folders 
+
+A_Basidiomycota
+A_Pezizomycotina
+A_Saccharomycotina
+
+The amended fungi dataset is available here: 
+
+
 
 <b> Results</b> 
 

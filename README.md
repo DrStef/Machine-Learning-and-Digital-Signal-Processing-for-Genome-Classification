@@ -102,8 +102,6 @@ The DNA sequence classification of vertebrates, from three different classes is 
 The methodology is described in the Jupyter Notebook  Part IIa. 
 
 
-
-
 <b> Fungi dataset</b> 
 
 It is available here: 
@@ -116,15 +114,16 @@ https://github.com/grandhawa/MLDSP/tree/master/DataBase/Fungi
 | Pezizomycotina   | 104       | 1364 / 203051 |
 | Saccharomycotina | 90        |18844 / 107123 | 
 
-We created additional datasets for running the <i>soft-align</i> procedure and identifying reference DNA frames. In folders 
 
-A_Basidiomycota
-A_Pezizomycotina
-A_Saccharomycotina
+We collected additional DNA sequences on the NCBI website and we created extra datasets for running the <i>soft-align</i> procedure and identifying reference DNA frames. <br>
+The additional datasets are saved in folders:  
 
-The amended fungi dataset is available here: 
+- A_Basidiomycota
+- A_Pezizomycotina
+- A_Saccharomycotina
 
-
+A zip file of the amended fungi dataset folder: <code>Fungi.zip</code> can be dowloaded in the current repository. <br>
+<b><i> This folder is required for running the follwing Jupyter notebook: "Part II a: Matching Fungi DNA sub-sequences with cross-correlation"</i></b>.    
 
 <b> Results</b> 
 
@@ -153,7 +152,7 @@ For the challenging Fungi dataset, the simple ML-FFT method does not work. We in
 
 <i> Soft Align </i> method with cross-correlation. Determination of reference frames for each class.
 
-#### <ul>[Part II a: Matching of Fungi DNA sub-sequences with cross-correlation](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA_Fungi_DNA_Sequence_Alignment_with_CrossCorrelation_v5.ipynb)</ul>
+#### <ul>[Part II a: Matching Fungi DNA sub-sequences with cross-correlation](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA_Fungi_DNA_Sequence_Alignment_with_CrossCorrelation_v5.ipynb)</ul>
 
 Full classification after importing reference frames for each class. 
 

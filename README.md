@@ -45,7 +45,7 @@ Their results show that ML-DSP overwhelmingly outperforms the alignment-based so
 
 ## Our initial approach: ML-FFT
 
-<b> Methodology </b>
+Methodology:
 
 In the initial ML-FFT  implementation we achieved 100% accuracy with the vertebrate dataset "birds-fish-mammals" by:
 - selecting the first NFFT=1024 points of each DNA sequence, 
@@ -55,7 +55,10 @@ In the initial ML-FFT  implementation we achieved 100% accuracy with the vertebr
 This simple method did not work with more challenging datasets like the Fungi dataset. <br>
 <br>
 
-<b> Birds - Fishes - Mammals dataset </b>
+
+##  Part I: ML-FFT  -  Birds - Fishes - Mammals DNA sequences classification    
+
+<b>  dataset </b>
 
 The Birds - Fishes - Mammals DNA sequences dataset is available here:         
 <br>
@@ -93,17 +96,14 @@ We display the best result below.
 - Classification within a same class i.e datasets: Fungi, Insects, is much more challenging.
 - We tested other ML models: K Nearest Neighbor(KNN), Random Forest Classifier, Decision Tree with accuracy in the 96-98% range. Not as efficient as SVM. They are left as an exercise. 
 
-
-
 <b>Jupyter Notebook:</b> 
-
 
 #### <ul>[Part I: Supervised Classification of Birds, Fishes, Mammals](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA%20Sequence%20Classification_Bird_Fish_Mammal_ML-FFT_v12.ipynb)</ul>
 
 
 <br>
         
-##  ML-FFT + "Soft Align"  -  Fungi DNA sequences classification        
+##  Part II: ML-FFT + "Soft Align"  -  Fungi DNA sequences classification        
 
 <b> Methodology </b> 
 
@@ -168,7 +168,7 @@ Full classification after importing reference frames for each class.
 
 <br>
 
-##  Insects DNA sequences classification 
+##  Part III: Insects DNA sequences classification 
 
 Excellent results were achieved using the method described in the previous section. This part is left as an exercise. <br>
 We used a subset of the Insect DNA sequence dataset for the soft-align process. Which may introuduce a bias. 
@@ -186,7 +186,7 @@ ML-FFT + Soft Alignement applied to insect dataset.
 <br>
 
 
-##  Protists DNA sequences classification 
+## Part IV:  Protists DNA sequences classification 
 
 We did not test the ML-FFT + Soft Alignement method with the small protists dataset. 
 More data is needed for the initial stage:  DNA sequence alignement and definition of the reference DNA frames. 

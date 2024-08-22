@@ -171,8 +171,8 @@ Full classification after importing reference frames for each class.
 ##  Part III: Insects DNA sequences classification 
 
 Excellent results were achieved using the method described in the previous section. This part is left as an exercise. <br>
-We used a subset of the Insect DNA sequence dataset for the soft-align process. Which may introduce a bias. 
-But it was difficult to collect more sequences on the website of the National Center for Biotechnology Information (NCBI). <br>
+We used a subset of the Insect DNA sequence dataset for the <i>soft-align</i> process. Which may introduce a bias. 
+Collecting additional sequences on the website of the National Center for Biotechnology Information (NCBI) was tedious. <br>
 We may post the Jupyter notebook in the future. 
 
 <b> Results </b> 

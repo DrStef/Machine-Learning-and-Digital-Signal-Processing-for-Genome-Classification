@@ -131,7 +131,7 @@ The additional datasets are saved in folders:
 - A_Saccharomycotina
 
 A zip file of the amended fungi dataset folder: <code>Fungi.zip</code> can be dowloaded in the current repository. <br>
-<b><i> This folder is required for running the follwing Jupyter notebook: "Part II a: Matching Fungi DNA sub-sequences with cross-correlation"</i></b>.    
+<b><i> This folder is required for running the following Jupyter notebook: "Part II a: Matching Fungi DNA sub-sequences with cross-correlation"</i></b>.    
 
 <b> Results</b> 
 

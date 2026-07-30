@@ -1,5 +1,18 @@
-# Machine Learning and Digital Signal Processing for Genome Classification
+<div align="center">
+<h1>Machine Learning and Digital Signal Processing for Genome Classification</h1>
+</div>
+<br>
 
+**Dr. Stéphane Dedieu** 
+<br>Applied Mathematics | Digital Signal Processing | ML <br>
+Summer 2026 <br>
+<a href="https://www.linkedin.com/in/sdedieu/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30">
+</a>
+
+<br>
+
+**Genomic Signal Processing (GSP) pipeline transforming biological character sequences into continuous numerical signals for advanced spectral analysis and machine learning classification.**
 
 Project:  Applying Digital Signal Processing: FFT, Spectrograms, Wavelets and Machine Learning/Deep Learning to genome classification. 
 
@@ -14,6 +27,31 @@ As a starting point we analyzed the following paper:
 Their DNA sequence classification method: ML-DSP is very effective and matches or outperforms the acuuracy of best existing methods with DNA sequence alignment. <br> They collected a large number of DNA sequences, and built many datasets for validation purposes: Vertebrates, Fungi, Insects...<br> They thourughly report many classification results. That we will use as reference for our research. <br>
 <br>
 Our objective is to develop methods that outperform the accuracy of ML-DSP with the most challenging datasets: Fungi, Protists, Insects. </ul></ul>
+
+
+
+### Notebooks
+
+[Part I: Time Series & Spectral Analysis with ML-FFT (Bird, Fish, Mammal)](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA%20Sequence%20Classification_Bird_Fish_Mammal_ML-FFT_v12.ipynb) 
+
+Dedicated to the early development of our custom approach, **ML-FFT** (the simplest method we can think of). Successfully tested with the Bird-Fish-Mammal dataset, achieving 100% accuracy with Logistic Regression or SVM, though limited on more complex datasets like Fungi.
+
+<br>
+
+[Part II (a): DNA Sequence Alignment with Cross-Correlation (Fungi Preliminary)](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA_Fungi_DNA_Sequence_Alignment_with_CrossCorrelation_v5.ipynb) 
+
+Preliminary section to Part IIb. Since the simple ML-FFT approach fails on the Fungi dataset (tested with NFFT=1024 due to shorter sequence lengths), we introduce a simple "soft" alignment method based on splitting DNA sequences into NFFT-long frames and computing cross-correlation.
+
+<br>
+
+[Part II (b): Supervised Classification of Fungi DNA Sequences](https://github.com/DrStef/Machine-Learning-and-Digital-Signal-Processing-for-Genome-Classification/blob/main/Project-DNA_Sequence_Classification_Fungi_Alignment_Process_PP_v016.ipynb) 
+
+Classification of Fungi DNA sequences into 3 phylums (subphylums) using short FFT (NFFT=1024 points) combined with the soft alignment method developed in Part IIa.
+
+
+
+
+
 
 
 

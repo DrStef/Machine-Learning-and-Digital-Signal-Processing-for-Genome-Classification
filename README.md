@@ -5,7 +5,8 @@
 
 **Dr. Stéphane Dedieu** 
 <br>Applied Mathematics | Digital Signal Processing | ML <br>
-Summer 2026 <br>
+Fall-Winter 2022 <br>
+Updated Summer 2026 <br>
 <a href="https://www.linkedin.com/in/sdedieu/">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30">
 </a>
